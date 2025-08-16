@@ -127,9 +127,36 @@
 
 
 
+// const login = prompt("Введіть логін:");
+
+// if (login === "Адмін") {
+//     const password = prompt("Введіть пароль:");
+
+//     if (password === "Я головний") {
+//         alert("Добрий день!");
+//     } else if (password === "" || password === null) {
+//         alert("Скасовано");
+//     } else {
+//         alert("Невірний пароль!");
+//     }
+
+// } else if (login === "" || login === null) {
+//     alert("Скасовано");
+// } else {
+//     alert("Я вас не знаю");
+// }
+
+
 //Завдання 6:
 
 // Використайте цикл while, щоб вивести в console всі числа від 0 до 20 включно.
+
+
+// let i = 0;
+// while (i <= 20) {
+//     console.log(i);
+//     i += 1;
+// }
 
 
 
