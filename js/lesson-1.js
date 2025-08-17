@@ -245,3 +245,157 @@
 //         }
 //     }
 // }
+
+
+
+// Завдання 11:
+// Напишіть цикл for, який виведе в консоль числа від 0 до 9 включно.
+// Перед циклом виведіть в консоль повідомлення 'before',
+// а після циклу - 'after'.
+// console.log('before');
+
+// for (let i = 0; i < 10; i += 1) {
+//     console.log(i);
+// }
+
+// console.log('after');
+
+
+
+// Завдання 12:
+// // Напишіть цикл for, який виведе в консоль всі букви рядка 'Alice' до першої літери 'l' включно.
+// Використовуйте break для виходу з циклу.
+// Після циклу виведіть в консоль повідомлення 'Цикл завершено'.
+// Підказка: використовуйте змінну str для збереження рядка 'Alice'.    
+
+
+// const str = 'Alice';
+
+// for (let i = 0; i < str.length; i += 1) {
+//     if (str[i] === 'l') {
+//         break
+//     }
+//     console.log(str[i]);
+// }
+// это цикл покажет первую букву в переменной
+
+
+
+
+// const fruits = ["apple", "banana", "orange"];
+
+// if (fruits.includes("banana")) {
+//   console.log("The array has an element banana");
+// } else {
+//   console.log("Array does not contain banana element");
+// }
+
+
+
+// Завдання 13:
+// Напиши функцію slugify(title), яка приймає заголовок статті, параметр title і повертає slug, створений із цього рядка.
+// Значенням параметра title будуть рядки, слова яких розділені лише пробілами.
+// Усі символи slug повинні бути в нижньому регістрі.
+// Усі слова slug повинні бути розділені тире.
+// Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
+
+
+// первый способ 
+// function slugify(title) {
+//     let lower = title.toLowerCase();
+//     let words = lower.split(" ");
+//     let slug = words.join("-");
+//     return slug;
+// }
+
+// console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
+// console.log(slugify("English for developer")); // "english-for-developer"
+// console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
+// console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
+
+// // второй способ
+// function slugify(title) {
+//     return title.toLowerCase().split(" ").join("-");
+// }
+
+
+
+
+// Напиши функцію під назвою makeArray, яка приймає три параметри: firstArray (масив), secondArray (масив) і maxLength (число). Функція повинна створювати новий масив, який містить усі елементи з firstArray, а потім усі елементи з secondArray.
+// Якщо кількість елементів у новому масиві перевищує maxLength, функція повинна повернути копію масиву з довжиною maxLength елементів.
+// В іншому випадку функція повинна повернути весь новий масив.
+// Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
+
+
+
+// первый способ  
+// function makeArray(firstArray, secondArray, maxLength) {
+//     const newArray = [...firstArray, ...secondArray];
+//     if (newArray.length > maxLength) {
+//         return newArray.slice(0, maxLength);
+//     } else {
+//         return newArray;
+//     }
+// }
+
+
+// второй способ 
+// function makeArray(firstArray, secondArray, maxLength) {
+//     let result = firstArray.concat(secondArray); 
+//      if (result.length > maxLength) {
+//        return result.slice(0, maxLength)
+//      } else {
+//        return result;  
+//      }
+//    }
+
+
+// третий способ
+// function makeArray(firstArray, secondArray, maxLength) {
+//     const newArray = firstArray.concat(secondArray);
+//     return newArray.length > maxLength ? newArray.slice(0, maxLength) :
+//         newArray;
+// }
+
+
+
+    // console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
+    // console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)); // ["Mango", "Poly", "Houston", "Ajax"]
+    // console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)); // ["Mango", "Ajax", "Chelsea"]
+    // console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)); // ["Earth", "Jupiter"]
+    // console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)); // ["Earth", "Jupiter", "Neptune", "Uranus"]
+    // console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)); // []
+
+
+
+
+
+// Завдання 14:
+// Напиши функцію filterArray(numbers, value), яка приймає масив чисел (numbers) та значення (value) як параметри. Функція повинна повертати новий масив лише тих чисел із масиву numbers, які більші за значення value.
+// Усередині функції:
+// Створи порожній масив, у який будеш додавати підходящі числа.
+// Використай цикл для ітерації кожного елемента масиву numbers.
+// Використовуй умовний оператор if усередині циклу для перевірки кожного елемента и додавання до свого масиву.
+// Поверни свій новий масив з підходящими числами як результат.
+// Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
+
+
+
+    // function filterArray(numbers, value) {
+    //     const array = [];
+    //     for (let i = 0; i < numbers.length; i++) {
+    //       const element = numbers[i];
+    //       if (element > value) {
+    //         array.push(element);
+    //       }
+    //     }
+    //     return array;
+    //   }
+
+
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
+// console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
+// console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
+// console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
+// console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
