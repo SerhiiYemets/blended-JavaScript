@@ -1,0 +1,12 @@
+{
+    "editor.suggestOnTriggerCharacters": false,
+    "terminal.integrated.suggest.suggestOnTriggerCharacters": false,
+    "editor.quickSuggestions" : {
+        "comments": "off",
+        "strings": "off",
+        "other": "off"
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.wordBasedSuggestions": "off",
+    "editor.parameterHints.enabled": false
+}
