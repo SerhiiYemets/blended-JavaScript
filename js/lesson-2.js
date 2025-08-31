@@ -11,6 +11,8 @@
 // Нумерація елементів повинна починатися з 1 (а не з 0).
 
 
+
+
 // const styles = ["jazz", "blues"];
 // styles.push("rock-n-roll");
 // for (let i = 0; i < styles.length; i += 1) {
