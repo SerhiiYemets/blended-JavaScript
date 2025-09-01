@@ -387,3 +387,146 @@
 // console.log(getTotalBalanceByGender(clients, "male")); // 12053
 
 // console.log(getTotalBalanceByGender(clients, "female")); // 8863
+
+
+
+// Метод this
+
+
+// const plalist = {
+//   name: "My playlist",
+//   tracks: ["track-1", "track-2"],
+//   rating: 4,
+//   changeName(nemName) {
+//     console.log(this);
+//     this.name = nemName;
+//     playalist.name = nemName;
+//   }
+// }
+
+// const playlist2 = {
+//   name: "My playlist",
+//   tracks: ["track-3", "track-4"],
+//   rating: 5,
+// }
+
+// playlist2.change2Name = plalist.changeName;
+
+// playlist.change2Name("Sports playlist");
+
+// playalist.changeName("New playlist");
+
+// console.log(playlist2);
+// console.log(plalist);
+
+
+
+// const plalist = {
+//   name: "My playlist",
+//   tracks: ["track-1", "track-2"],
+//   rating: 4,
+//   changeName(nemName) {
+//     console.log(this);
+//     this.name = nemName;
+//     playalist.name = nemName;
+//   },
+//   addTrack(newTrack) {
+//     this.tracks.push(newTrack);
+//   },
+//   updateRating(newRating) {
+//     this.rating = newRating;
+//   },
+//   getTrackCount() {
+//     return this.tracks.length;
+//   }
+// }
+
+// playlist.changeName("New playlist");
+// plalist.addTrack("track-3");
+// plalist.updateRating(5);
+// console.log(plalist.getTrackCount());
+// console.log(plalist);
+
+
+
+
+// Синтаксис rest (складае)
+
+// function foo(a, b, ...rest) {
+//   console.log(a, b);
+//   console.log(rest);
+// }
+
+// foo(1, 2, 3, 4, 5);
+
+
+
+
+// // Синтаксис spread (розгортае)
+
+// const arr = [
+//   1000,
+//   ...[1, 2, 3],
+//   4000,
+//   ...[5, 6, 7],
+//   8000
+// ];
+
+// console.log(arr);
+
+
+// // Пошук найменшого або найбильшой теиператури (числа)
+
+// const temps = [18, 14, 12, 21, 17, 29, 24];
+
+// console.log(Math.min(...temps));
+// console.log(Math.max(...temps));
+
+
+
+
+// створення масиву и тип за посылання
+
+// const a = [1, 2, 3];
+// const b = [...a]; // 1, 2, 3
+// console.log(a);
+// console.log(b); 
+
+// const a = [{ x: 1 }, { y: 2 }, { z: 3 }];
+// const b = [...a]; // [{ x: 1 }, { y: 2 }, { z: 3 }]
+
+
+// a[0].x = 1000;
+
+// console.log(a);
+// console.log(b);
+
+
+
+// поеднаемо декилька масивов в один через spread
+
+// const a = [1, 2, 3];
+// const b = [4, 5, 6];
+// const c = [7, 8, 9];
+
+// const all = [...a, ...b, ...c];
+
+// console.log(all);
+
+
+
+// // створення обєкту 
+
+// const objA = { x: 1, y: 2 };
+
+// const objB = { x: 0, q: 3, };
+
+// const objC = {
+//   ...objA, // { x: 1, y: 2 }
+//   x: 10, // { x: 10, y: 2 }
+//   ...objB,  // { x: 0, y: 2, q: 3 } 
+//   y: 20 // { x: 0, y: 20, q: 3 }
+// };
+
+// такий синтаксис перезаписує властивості обєкту
+
