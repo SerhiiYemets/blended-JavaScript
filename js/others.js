@@ -669,3 +669,65 @@
 
 
 // console.log(account);
+
+
+
+// Завдання 11: Функції зворотного виклику (callback)
+// text// Напишіть функцію each(array, callback),
+// яка приймає масив та функцію зворотного виклику (callback).
+// Функція each повинна застосувати callback до кожного елемента масиву
+// і повернути новий масив із результатами виклику callback для кожного елемента.
+
+// Приклад використання:
+// each([64, 49, 36, 25, 16], function(value) { return value * 2; });
+// Повертає: [128, 98, 72, 50, 32]
+
+
+// function each(array, callback) {
+//   const newArray = [];
+//   for (const item of array) {
+//     newArray.push(callback(item));
+//   }
+//   return newArray;
+// }
+
+// each([64, 49, 36, 25, 16], function (value) {
+//   return value * 2;
+// });
+
+// each([64, 49, 36, 25, 16], function (value) {
+//   return value - 10;
+// });
+
+// console.log(each([64, 49, 36, 25, 16], function (value) { 
+//   return Math.sqrt(value);
+// }));
+
+
+// явне вовернення функції
+
+// const addArrow = (a, b) => {
+//   return a + b;
+// }
+
+// console.log(addArrow(10, 20));
+
+
+// // неявне вовернення функції
+
+// const addArrow = (a, b) => a + b;
+
+// console.log(addArrow(10, 20));
+
+  
+// const fnB = a => ({ a : 20});
+// console.log(fnB(10));
+
+
+// const calc = (a, b, callback) => {
+//   const res = callback(a, b);
+//   const str = res + "!!!";
+//   return str;
+// }
+// console.log(calc(10, 20, (x, y) => x + y));
+
