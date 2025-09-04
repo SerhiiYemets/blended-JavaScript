@@ -1,5 +1,7 @@
 "[javascript]": {
     "editor.suggestOnTriggerCharacters": false,
+    "editor.quickSuggestions": false,
+    "editor.suggestOnTriggerCharacters": false,
     "editor.quickSuggestions": {
         "other": false,
         "comments": false,
