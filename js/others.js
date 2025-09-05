@@ -893,3 +893,56 @@
 // const numbers = [5, 10, 15, 20, 25];
 // const res = numbers.find((item) => item > 10);
 // console.log(res);
+
+
+// const getCars = (arr, model) => {
+//   return arr.find((car) => car.model === model);
+// }
+// console.log(getCars(allCars, "Accord"));
+
+
+
+// const numbers = [1, 3, 24, 25, 40];
+
+// const total = numbers.reduce((acc, numbers) => acc + numbers, 0);
+// console.log(total);
+
+
+// const salary = {
+//   Alex: 100,
+//   Tom: 50,
+//   Lola: 300,
+// }
+
+// const values = Object.values(salary);
+
+// const total = values.reduce((acc, value) => acc + value, 0);
+// console.log(total);
+
+// const players = [
+//   { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
+//   { id: "player-2", name: "Poly", timePlayed: 470, points: 92, online: true },
+//   { id: "player-3", name: "Kiwi", timePlayed: 230, points: 48, online: true },
+//   { id: "player-4", name: "Ajax", timePlayed: 150, points: 71, online: false },
+//   { id: "player-5", name: "Chelsy", timePlayed: 80, points: 48, online: true },
+// ];
+
+// const totalTime = players.reduce((acc, player) => acc + player.points, 0);
+// console.log(totalTime);
+
+// // порахувати сумму 
+// const total = players.reduce((acc, item) => acc + item.timePlayed * item.points, 0);
+// console.log(total);
+
+
+// Ланцюжок методу
+
+// const numbers = [3, 4, 7, 5, 10];
+
+// const result = numbers
+//   .filter((num) => num > 4)
+//   .map((num) => num * 2)
+//   .toSorted((a, b) => a - b)
+
+//   console.log(result);
+  
