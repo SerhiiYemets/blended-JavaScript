@@ -945,4 +945,21 @@
 //   .toSorted((a, b) => a - b)
 
 //   console.log(result);
-  
+
+
+// function greet(str) {
+//   console.log(`${str}, ${this.username}, your room is ${this.room}!`);
+// }
+
+// const mango = {
+//   username: "Mango",
+// 	room: 27
+// };
+
+// const poly = {
+//   username: "Poly",
+// 	room: 191
+// };
+
+// greet.call(mango, "Welcome");
+// greet.call(poly, "Aloha");
