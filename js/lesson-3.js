@@ -83,7 +83,11 @@
 //  у порядку алфавіту. 
 // Очікуваний результат: ["apple", "banana", "orange", "pear"].
 
+
 // const stringArray = ['banana', 'orange', 'apple', 'pear'];
+// const arrayString = stringArray.toSorted((a, b) => a.localeCompare(b))
+// console.log(arrayString);
+
 
 
 
@@ -153,49 +157,49 @@
  // Приклад використання:
 
 
- class Calculator {
-  number(value) {
-    this.value = value;
-    return this;
-  }
+//  class Calculator {
+//   number(value) {
+//     this.value = value;
+//     return this;
+//   }
 
-  add(value) {
-    this.value += value;
-    return this;
-  }
+//   add(value) {
+//     this.value += value;
+//     return this;
+//   }
 
-  subtract(value) {
-    this.value -= value;
-    return this;
-  }
+//   subtract(value) {
+//     this.value -= value;
+//     return this;
+//   }
 
-  multiply(value) {
-    this.value *= value;
-    return this;
-  }
+//   multiply(value) {
+//     this.value *= value;
+//     return this;
+//   }
 
-  divide(value) {
-    if (value === 0) {
-      throw new Error("Division by zero is not allowed");
-    }
-    this.value /= value;
-    return this;
-  }
+//   divide(value) {
+//     if (value === 0) {
+//       throw new Error("Division by zero is not allowed");
+//     }
+//     this.value /= value;
+//     return this;
+//   }
 
-  getResult() {
-    return this.value; // Возвращаем текущее значение
-  }
-}
+//   getResult() {
+//     return this.value; // Возвращаем текущее значение
+//   }
+// }
 
-const calc = new Calculator();
+// const calc = new Calculator();
 
-const result = calc
-  .number(10)   // Устанавливаем начальное значение 10
-  .add(5)       // Добавляем 5 (10 + 5 = 15)
-  .subtract(3)  // Вычитаем 3 (15 - 3 = 12)
-  .multiply(4)  // Умножаем на 4 (12 * 4 = 48)
-  .divide(2)    // Делим на 2 (48 / 2 = 24)
-  .getResult(); // Получаем результат: 24
+// const result = calc
+//   .number(10)   // Устанавливаем начальное значение 10
+//   .add(5)       // Добавляем 5 (10 + 5 = 15)
+//   .subtract(3)  // Вычитаем 3 (15 - 3 = 12)
+//   .multiply(4)  // Умножаем на 4 (12 * 4 = 48)
+//   .divide(2)    // Делим на 2 (48 / 2 = 24)
+//   .getResult(); // Получаем результат: 24
 
-console.log(result); // 24
+// console.log(result); // 24
 
