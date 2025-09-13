@@ -89,18 +89,20 @@
 // console.log(arrayString);
 
 
-
-
 // Завдання 8:
 
 //  Відсортуйте масив об'єктів за віком у порядку зростання. 
 // Очікуваний результат: [{name: "Bob", age: 19}, {name: "John", age: 27}, {name: "Jane", age: 31}].
 
-//const users = [
+
+// const users = [
 //  { name: 'John', age: 27 },
 //  { name: 'Jane', age: 31 },
 //  { name: 'Bob', age: 19 },
 // ];
+// const newUser = users.toSorted((a, b) => a.age - b.age);
+// console.log(newUser);
+
 
 
 
@@ -111,11 +113,16 @@
 // вік більше 20 років. 
 // Очікуваний результат: [{name: "John", age: 27}, {name: "Jane", age: 31}]
 
-//const user = [
+
+// const user = [
 //  { name: 'John', age: 27 },
 //  { name: 'Jane', age: 31 },
 //  { name: 'Bob', age: 19 },
 // ]
+// const newUser = user
+//   .filter(user => user.age > 20)
+//   .toSorted((a, b) => a.age - b.age);
+// console.log(newUser);
 
 
 
