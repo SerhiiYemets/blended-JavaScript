@@ -1150,18 +1150,27 @@
 
 
 class Car {
+
+  #price;
+
   constructor(obj) {
     this.brand = obj.brand;
     this.model = obj.model;
-    this.price = obj.price
+    this.#price = obj.price
   }
   getModel() {
     return this.model;
   }
-  chageModel(newModel) {
+  changeModel(newModel) {
     this.model = newModel;
   }
-}
+  get price() {
+    return this.#price
+  }
+  set price(newPrice) {
+    this.#price = newPrice;
+  }
+} 
 
 const bmw = new Car({
   brand: "BMW",
@@ -1169,7 +1178,9 @@ const bmw = new Car({
   price: 70000
 });
 
-bmw.price += "5000";
+bmw.price = bmw.price + 5000;
+
+console.log(bmw.price);
 
 console.log(bmw);
 
