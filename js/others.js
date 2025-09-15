@@ -1150,9 +1150,10 @@
 
 
 class Car {
-  constructor(brand, model) {
-    this.brand = brand;
-    this.model = model;
+  constructor(obj) {
+    this.brand = obj.brand;
+    this.model = obj.model;
+    this.price = obj.price
   }
   getModel() {
     return this.model;
@@ -1162,11 +1163,14 @@ class Car {
   }
 }
 
-const bmw = new Car("BMW", "X5");
+const bmw = new Car({
+  brand: "BMW",
+  model: "X5",
+  price: 70000
+});
+
+bmw.price += "5000";
 
 console.log(bmw);
-console.log(bmw.getModel());
-bmw.chageModel("x7");
-
 
 
