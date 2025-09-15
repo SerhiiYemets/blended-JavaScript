@@ -1146,3 +1146,27 @@
 // console.log(builder.getValue()); // "^.^"
 // builder.padBoth("=");
 // console.log(builder.getValue()); // "=^.^="
+
+
+
+class Car {
+  constructor(brand, model) {
+    this.brand = brand;
+    this.model = model;
+  }
+  getModel() {
+    return this.model;
+  }
+  chageModel(newModel) {
+    this.model = newModel;
+  }
+}
+
+const bmw = new Car("BMW", "X5");
+
+console.log(bmw);
+console.log(bmw.getModel());
+bmw.chageModel("x7");
+
+
+
