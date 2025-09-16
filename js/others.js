@@ -1280,5 +1280,53 @@
 // console.log(petya);
 
 
+/**
+ * Напиши клас User який створює об'єкт із властивостями login та email.
+ * Оголоси приватні властивості #login та #email, доступ до яких зроби через
+ * гетер та сетер login та email.
+ */
+
+
+// class User {
+//     #login;
+//     #email;
+
+//     constructor(obj) {
+//         this.#login = obj.login;
+//         this.#email = obj.email;
+//     }
+
+//     get login() {
+//         return this.#login;
+//     }
+
+//     set login(newLogin) {
+//         this.#login = newLogin;
+//     }
+
+//     get email() {
+//         return this.#email;
+//     }
+
+//     set email(str) {
+//         this.#email = str;
+//     }
+
+// }
+
+
+// const alice = new User({ login: "Alice", email: "alice@gmail.com" });
+
+
+// alice.login = "Super Alice";
+// console.log(alice.login);
+
+// alice.email = "super_puper@gmail.com";
+// console.log(alice.email);
+
+
+// console.log(alice);
+
+
 
 
