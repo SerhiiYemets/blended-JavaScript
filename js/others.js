@@ -1189,36 +1189,96 @@
 // Наслідування класів
 
 
-class Hero {
-  constructor(obj) {
-    this.name = obj.name;
-    this.xp = obj.xp;
-  }
-  gainXp() {
-    this.xp += amount;
-    console.log(`${this.name} received ${amount} xp`);   
-  }
-}
+// class Hero {
+//   constructor(obj) {
+//     this.name = obj.name;
+//     this.xp = obj.xp;
+//   }
+//   gainXp() {
+//     this.xp += amount;
+//     console.log(`${this.name} received ${amount} xp`);   
+//   }
+// }
 
-class Paladin extends Hero {
-  constructor(obj) {
-    super({
-      name: obj.name,
-      xp: obj.xp
-    })
-    this.weapon = obj.weapon;
-  }
-  attack() {
-    console.log(`${this.name} attacks with ${this.weapon}`);
+// class Paladin extends Hero {
+//   constructor(obj) {
+//     super({
+//       name: obj.name,
+//       xp: obj.xp
+//     })
+//     this.weapon = obj.weapon;
+//   }
+//   attack() {
+//     console.log(`${this.name} attacks with ${this.weapon}`);
     
-  }
-}
+//   }
+// }
 
-const arthas = new Paladin({ name: "Arthas", xp: 1000, weapon: "sword" })
+// const arthas = new Paladin({ name: "Arthas", xp: 1000, weapon: "sword" })
 
-arthas.gainXp(500);
+// arthas.gainXp(500);
 
-console.log(arthas);
+// console.log(arthas);
+
+
+/**
+ * Напиши клас Blogger для створення об'єкта блогера з наступними властивостями:
+ * - email - пошта, рядок
+ * - age - вік, число
+ * - numberOfPosts - кількість постів, число
+ * - topics - масив тем на яких спеціалізується блогер
+ *
+ * Клас чекає один параметр - об'єкт налаштувань з однойменними властивостями.
+ *
+ * - Додай метод getInfo(), який, повертає рядок: 
+ *    User ${email} is ${age} years old and has ${numPosts} posts.
+ * 
+ * - Додай метод updatePostCount(value), який у параметрі value 
+ *    приймає кількість постів, які потрібно додати користувачеві.
+ */
+
+
+// class Blogger {
+//     constructor(obj) {
+//         this.email = obj.email;
+//         this.age = obj.age;
+//         this.numberOfPosts = obj.numberOfPosts;
+//         this.topics = obj.topics;
+//     }
+
+//     getInfo() {
+//         return `User ${this.email} is ${this.age} years old and has ${this.numberOfPosts} posts.`;
+//     }
+
+//     updatePostCount(value) {
+//         this.numberOfPosts += value;
+//     }
+// }
+
+
+// const alice = new Blogger({
+//     email: "alice@gmail.com",
+//     age: 30,
+//     numberOfPosts: 20,
+//     topics: ["tech", "gaming"]
+// });
+
+// alice.updatePostCount(10);
+// console.log(alice.getInfo());
+// console.log(alice);
+
+
+// const petya = new Blogger({
+//     email: "petya@gmail.com",
+//     age: 20,
+//     numberOfPosts: 10,
+//     topics: ["cooking"]
+// })
+
+// petya.updatePostCount(2);
+// console.log(petya.getInfo());
+// console.log(petya);
+
 
 
 
