@@ -1149,39 +1149,76 @@
 
 
 
-class Car {
+// class Car {
 
-  #price;
+//   #price;
 
+//   constructor(obj) {
+//     this.brand = obj.brand;
+//     this.model = obj.model;
+//     this.#price = obj.price
+//   }
+//   getModel() {
+//     return this.model;
+//   }
+//   changeModel(newModel) {
+//     this.model = newModel;
+//   }
+//   get price() {
+//     return this.#price
+//   }
+//   set price(newPrice) {
+//     this.#price = newPrice;
+//   }
+// } 
+
+// const bmw = new Car({
+//   brand: "BMW",
+//   model: "X5",
+//   price: 70000
+// });
+
+// bmw.price = bmw.price + 5000;
+
+// console.log(bmw.price);
+
+// console.log(bmw);
+
+
+
+// Наслідування класів
+
+
+class Hero {
   constructor(obj) {
-    this.brand = obj.brand;
-    this.model = obj.model;
-    this.#price = obj.price
+    this.name = obj.name;
+    this.xp = obj.xp;
   }
-  getModel() {
-    return this.model;
+  gainXp() {
+    this.xp += amount;
+    console.log(`${this.name} received ${amount} xp`);   
   }
-  changeModel(newModel) {
-    this.model = newModel;
-  }
-  get price() {
-    return this.#price
-  }
-  set price(newPrice) {
-    this.#price = newPrice;
-  }
-} 
+}
 
-const bmw = new Car({
-  brand: "BMW",
-  model: "X5",
-  price: 70000
-});
+class Paladin extends Hero {
+  constructor(obj) {
+    super({
+      name: obj.name,
+      xp: obj.xp
+    })
+    this.weapon = obj.weapon;
+  }
+  attack() {
+    console.log(`${this.name} attacks with ${this.weapon}`);
+    
+  }
+}
 
-bmw.price = bmw.price + 5000;
+const arthas = new Paladin({ name: "Arthas", xp: 1000, weapon: "sword" })
 
-console.log(bmw.price);
+arthas.gainXp(500);
 
-console.log(bmw);
+console.log(arthas);
+
 
 
