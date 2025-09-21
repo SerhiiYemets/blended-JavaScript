@@ -25,19 +25,26 @@
 const bodyEl = document.querySelector("body");
 console.log(bodyEl);
 
-const titleEl = document.querySelector("#title")
+const titleEl = document.querySelector("#title");
 console.log(titleEl);
 
-const listEl = document.querySelector(".list")
+const listEl = document.querySelector(".list");
 console.log(listEl);
 
-const dataEl = document.querySelectorAll("[data-topic]")
+const dataEl = document.querySelectorAll("[data-topic]");
 console.log(dataEl);
 
 console.log(dataEl[0]);
 console.log(dataEl[dataEl.length - 1]);
 
+const h1El = document.querySelector("h1");
+console.log(h1El.nextElementSibling);
 
+const h3El = document.querySelectorAll("h3");
+console.log(h3El);
+
+h3El.forEach(el => el.classList.add("active"));
+console.log(h3El);
 
 
 
