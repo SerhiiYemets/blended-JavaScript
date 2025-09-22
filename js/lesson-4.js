@@ -21,35 +21,61 @@
 // 19 - зроби це саме, але використовуй шаблонні рядки та метод insertAdjacentHTML()
 // 20 - очисти список
 
-
+// 1)
 const bodyEl = document.querySelector("body");
 console.log(bodyEl);
-
+// 2)
 const titleEl = document.querySelector("#title");
 console.log(titleEl);
-
+// 3)
 const listEl = document.querySelector(".list");
 console.log(listEl);
-
+// 4)
 const dataEl = document.querySelectorAll("[data-topic]");
 console.log(dataEl);
-
+// 5)
 console.log(dataEl[0]);
+// 6)
 console.log(dataEl[dataEl.length - 1]);
-
+// 7)
 const h1El = document.querySelector("h1");
 console.log(h1El.nextElementSibling);
-
+// 8)
 const h3El = document.querySelectorAll("h3");
 console.log(h3El);
-
+// 9)
 h3El.forEach(el => el.classList.add("active"));
 console.log(h3El);
-
-
-
-
-
+// 10)
+const liEl = document.querySelector('li[data-topic="navigation"]');
+console.log(liEl);
+// 11)
+const liEls = document.querySelectorAll('li[data-topic="navigation"]');
+liEls.forEach(el => {
+    el.style.backgroundColor = "yellow";
+});
+// 12)
+const liElement = document.querySelector('li[data-topic="navigation"]');
+if (liElement) {
+    const pLiEl = liElement.querySelector("p");
+    if (pLiEl) {
+        pLiEl.textContent = "Я змінив тут текст!";
+    };
+}; 
+// 13)
+const currentTopic = "manipulation"
+const dataEls = document.querySelector(`[data-topic="${currentTopic}"]`);
+console.log(dataEls);
+// 14)
+const dataElement = document.querySelector(`[data-topic="${currentTopic}"]`);
+dataElement.style.backgroundColor = "lightblue";
+// 15)
+const hEl = document.querySelector('h3.completed');
+if (hEl) {
+    console.log(hEl);
+} else {
+    console.log(`Елемент 'h3.completed' не знайдено`);
+}
 
 
 
