@@ -76,7 +76,13 @@ if (hEl) {
 } else {
     console.log(`Елемент 'h3.completed' не знайдено`);
 }
+//16)
+document.querySelector('h3.completed').closest('li').remove();
 
+
+// const h3 = document.querySelector('h3.completed'); // Знаходимо <h3> з класом completed
+// const li = h3 && h3.closest('li'); // Знаходимо батьківський <li>, якщо <h3> існує
+// if (li) li.remove(); // Видаляємо <li>, якщо він знайдений
 
 
 
