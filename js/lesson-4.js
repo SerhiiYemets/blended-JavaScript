@@ -88,6 +88,19 @@ const pEl = document.createElement("p");
 pEl.textContent = "Об'єктна модель документа (Document Object Model)";
 navP.insertAdjacentElement("afterend", pEl);
 console.log(pEl);
+// 18)
+const navEl = document.querySelector(".list");
+const navItemEL = document.createElement("li");
+const navH3 = document.createElement("h3");
+navH3.textContent = "Властивість innerHTML";
+const navPel = document.createElement("p");
+navPel.textContent = "Ще один спосіб створити DOM-елементи і помістити їх в дерево - це використовувати рядки з тегами і дозволити браузеру зробити всю важку роботу";
+
+navItemEL.appendChild(navH3);
+navItemEL.appendChild(navPel);
+navEl.appendChild(navItemEL);
+
+console.log(navItemEL);
 
 
 
