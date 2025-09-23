@@ -79,11 +79,15 @@ if (hEl) {
 //16)
 document.querySelector('h3.completed').closest('li').remove();
 
-
-// const h3 = document.querySelector('h3.completed'); // Знаходимо <h3> з класом completed
-// const li = h3 && h3.closest('li'); // Знаходимо батьківський <li>, якщо <h3> існує
-// if (li) li.remove(); // Видаляємо <li>, якщо він знайдений
-
+// const h3 = document.querySelector('h3.completed'); 
+// const li = h3 && h3.closest('li');
+// if (li) li.remove(); 
+// 17)
+const navP = document.querySelector("h1");
+const pEl = document.createElement("p");
+pEl.textContent = "Об'єктна модель документа (Document Object Model)";
+navP.insertAdjacentElement("afterend", pEl);
+console.log(pEl);
 
 
 
