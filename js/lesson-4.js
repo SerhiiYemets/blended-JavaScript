@@ -21,87 +21,86 @@
 // 19 - зроби це саме, але використовуй шаблонні рядки та метод insertAdjacentHTML()
 // 20 - очисти список
 
-// 1)
-const bodyEl = document.querySelector("body");
-console.log(bodyEl);
-// 2)
-const titleEl = document.querySelector("#title");
-console.log(titleEl);
-// 3)
-const listEl = document.querySelector(".list");
-console.log(listEl);
-// 4)
-const dataEl = document.querySelectorAll("[data-topic]");
-console.log(dataEl);
-// 5)
-console.log(dataEl[0]);
-// 6)
-console.log(dataEl[dataEl.length - 1]);
-// 7)
-const h1El = document.querySelector("h1");
-console.log(h1El.nextElementSibling);
-// 8)
-const h3El = document.querySelectorAll("h3");
-console.log(h3El);
-// 9)
-h3El.forEach(el => el.classList.add("active"));
-console.log(h3El);
-// 10)
-const liEl = document.querySelector('li[data-topic="navigation"]');
-console.log(liEl);
-// 11)
-const liEls = document.querySelectorAll('li[data-topic="navigation"]');
-liEls.forEach(el => {
-    el.style.backgroundColor = "yellow";
-});
-// 12)
-const liElement = document.querySelector('li[data-topic="navigation"]');
-if (liElement) {
-    const pLiEl = liElement.querySelector("p");
-    if (pLiEl) {
-        pLiEl.textContent = "Я змінив тут текст!";
-    };
-}; 
-// 13)
-const currentTopic = "manipulation"
-const dataEls = document.querySelector(`[data-topic="${currentTopic}"]`);
-console.log(dataEls);
-// 14)
-const dataElement = document.querySelector(`[data-topic="${currentTopic}"]`);
-dataElement.style.backgroundColor = "lightblue";
-// 15)
-const hEl = document.querySelector('h3.completed');
-if (hEl) {
-    console.log(hEl);
-} else {
-    console.log(`Елемент 'h3.completed' не знайдено`);
-}
-//16)
-document.querySelector('h3.completed').closest('li').remove();
+// // 1)
+// const bodyEl = document.querySelector("body");
+// console.log(bodyEl);
+// // 2)
+// const titleEl = document.querySelector("#title");
+// console.log(titleEl);
+// // 3)
+// const listEl = document.querySelector(".list");
+// console.log(listEl);
+// // 4)
+// const dataEl = document.querySelectorAll("[data-topic]");
+// console.log(dataEl);
+// // 5)
+// console.log(dataEl[0]);
+// // 6)
+// console.log(dataEl[dataEl.length - 1]);
+// // 7)
+// const h1El = document.querySelector("h1");
+// console.log(h1El.nextElementSibling);
+// // 8)
+// const h3El = document.querySelectorAll("h3");
+// console.log(h3El);
+// // 9)
+// h3El.forEach(el => el.classList.add("active"));
+// console.log(h3El);
+// // 10)
+// const liEl = document.querySelector('li[data-topic="navigation"]');
+// console.log(liEl);
+// // 11)
+// const liEls = document.querySelectorAll('li[data-topic="navigation"]');
+// liEls.forEach(el => {
+//     el.style.backgroundColor = "yellow";
+// });
+// // 12)
+// const liElement = document.querySelector('li[data-topic="navigation"]');
+// if (liElement) {
+//     const pLiEl = liElement.querySelector("p");
+//     if (pLiEl) {
+//         pLiEl.textContent = "Я змінив тут текст!";
+//     };
+// }; 
+// // 13)
+// const currentTopic = "manipulation"
+// const dataEls = document.querySelector(`[data-topic="${currentTopic}"]`);
+// console.log(dataEls);
+// // 14)
+// const dataElement = document.querySelector(`[data-topic="${currentTopic}"]`);
+// dataElement.style.backgroundColor = "lightblue";
+// // 15)
+// const hEl = document.querySelector('h3.completed');
+// if (hEl) {
+//     console.log(hEl);
+// } else {
+//     console.log(`Елемент 'h3.completed' не знайдено`);
+// }
+// //16)
+// document.querySelector('h3.completed').closest('li').remove();
 
-// const h3 = document.querySelector('h3.completed'); 
-// const li = h3 && h3.closest('li');
-// if (li) li.remove(); 
-// 17)
-const navP = document.querySelector("h1");
-const pEl = document.createElement("p");
-pEl.textContent = "Об'єктна модель документа (Document Object Model)";
-navP.insertAdjacentElement("afterend", pEl);
-console.log(pEl);
-// 18)
-const navEl = document.querySelector(".list");
-const navItemEL = document.createElement("li");
-const navH3 = document.createElement("h3");
-navH3.textContent = "Властивість innerHTML";
-const navPel = document.createElement("p");
-navPel.textContent = "Ще один спосіб створити DOM-елементи і помістити їх в дерево - це використовувати рядки з тегами і дозволити браузеру зробити всю важку роботу";
+// // const h3 = document.querySelector('h3.completed'); 
+// // const li = h3 && h3.closest('li');
+// // if (li) li.remove(); 
+// // 17)
+// const navP = document.querySelector("h1");
+// const pEl = document.createElement("p");
+// pEl.textContent = "Об'єктна модель документа (Document Object Model)";
+// navP.insertAdjacentElement("afterend", pEl);
+// console.log(pEl);
+// // 18)
+// const navEl = document.querySelector(".list");
+// const navItemEL = document.createElement("li");
+// const navH3 = document.createElement("h3");
+// navH3.textContent = "Властивість innerHTML";
+// const navPel = document.createElement("p");
+// navPel.textContent = "Ще один спосіб створити DOM-елементи і помістити їх в дерево - це використовувати рядки з тегами і дозволити браузеру зробити всю важку роботу";
 
-navItemEL.appendChild(navH3);
-navItemEL.appendChild(navPel);
-navEl.appendChild(navItemEL);
+// navItemEL.appendChild(navH3);
+// navItemEL.appendChild(navPel);
+// navEl.appendChild(navItemEL);
 
-console.log(navItemEL);
-
+// console.log(navItemEL);
 
 
 // Завдання 2:
