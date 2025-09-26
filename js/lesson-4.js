@@ -89,6 +89,7 @@
 // navP.insertAdjacentElement("afterend", pEl);
 // console.log(pEl);
 // // 18)
+
 // const navEl = document.querySelector(".list");
 // const navItemEL = document.createElement("li");
 // const navH3 = document.createElement("h3");
@@ -102,6 +103,25 @@
 
 // console.log(navItemEL);
 
+// // 19)
+// const navItemEl = document.querySelector(".list");
+
+// const navElHtml = `
+//     <li>
+//         <h3>Властивість innerHTML</h3>
+//         <p>Ще один спосіб створити DOM-елементи і помістити їх в дерево - це використовувати рядки з тегами і дозволити браузеру зробити всю важку роботу</p>
+//     </li>
+// `;
+
+// navEl.insertAdjacentHTML("afterbegin", navElHtml);
+
+// console.log(navItemEl);
+
+// // 20)
+// const navElDelet = document.querySelector(".list");
+// navEl.innerHTML = "";
+
+
 
 // Завдання 2:
 
@@ -111,8 +131,21 @@
 // Парні числа повинні мати зелений фон (додати клас even), 
 // Непарні числа - жовтий фон (додати клас odd).
 
-// const randomNumber = () => Math.floor(Math.random() * 100) + 1;
+document.querySelector('.number-container')
+const randomNumber = () => Math.floor(Math.random() * 100) + 1;
 
+for (let i = 0; i < 100; i++) {
+    const divEL = document.createElement('div');
+    divEL.classList.add('number');
+    const number = randomNumber();
+    divEL.textContent = number;
+    if (number % 2 === 0) {
+        divEL.classList.add('even');
+    } else {
+        divEL.classList.add('odd');
+    }
+    numberContainer.appendChild(divEL);
+}
 
 
 // Завдання 3:
