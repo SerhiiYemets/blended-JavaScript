@@ -159,18 +159,18 @@
 // // то клас `error`
 
 // 1. Знайти елемент <input> за ID
-const inputElement = document.querySelector('username');
+// const inputElement = document.querySelector('username');
 
-inputElement.addEventListener('input', (event) => {
-    const value = event.target.value;
-    if (value.length >= 6) {
-        inputElement.classList.add('success');
-        inputElement.classList.remove('error');
-    } else {
-        inputElement.classList.add('error');
-        inputElement.classList.remove('success');
-    }
-});
+// inputElement.addEventListener('input', (event) => {
+//     const value = event.target.value;
+//     if (value.length >= 6) {
+//         inputElement.classList.add('success');
+//         inputElement.classList.remove('error');
+//     } else {
+//         inputElement.classList.add('error');
+//         inputElement.classList.remove('success');
+//     }
+// });
 
 
 // 2 - При події `focus` зроби перевірку на пустоту поля інпута,
@@ -178,15 +178,15 @@ inputElement.addEventListener('input', (event) => {
 // якщо при фокусі поле непусте, то `outline` => `'3px solid green'`
 
 
-const focusElement = document.querySelector('input');
-focusElement.addEventListener('focus', (event) => {
-    const value = event.target.value;
-    if (value === '') {
-        event.target.style.outline = '3px solid red';
-    } else {
-        event.target.style.outline = '3px solid green';
-    }
-});
+// const focusElement = document.querySelector('input');
+// focusElement.addEventListener('focus', (event) => {
+//     const value = event.target.value;
+//     if (value === '') {
+//         event.target.style.outline = '3px solid red';
+//     } else {
+//         event.target.style.outline = '3px solid green';
+//     }
+// });
 
 
 // 3 - При події `blur` зроби перевірку на пустоту поля інпута,
@@ -194,15 +194,15 @@ focusElement.addEventListener('focus', (event) => {
 // якщо при фокусі поле непусте, то `outline` => `'3px solid lime'`
 
 
-const blurElement = document.querySelector('input');
-blurElement.addEventListener('blur', (event) => {
-    const value = event.target.value;
-    if (value === '') {
-        event.target.style.outline = '3px solid red';
-    } else {
-        event.target.style.outline = '3px solid lime';
-    }
-});
+// const blurElement = document.querySelector('input');
+// blurElement.addEventListener('blur', (event) => {
+//     const value = event.target.value;
+//     if (value === '') {
+//         event.target.style.outline = '3px solid red';
+//     } else {
+//         event.target.style.outline = '3px solid lime';
+//     }
+// });
 
 
 // 4 - При події `submit`. Відміни поведінку браузера по змовчуванню.
@@ -217,60 +217,74 @@ blurElement.addEventListener('blur', (event) => {
 // При відправці форми, очисти інпут, верни чек бокс у положення 
 // false, верни дефолтне значення "Anonymous" у span.
 // Отримуємо елементи форми
-const form = document.querySelector('form');
-const input = document.querySelector('input[type="text"]');
-const checkbox = document.querySelector('input[type="checkbox"]');
-const span = document.querySelector('span');
+// const form = document.querySelector('form');
+// const input = document.querySelector('input[type="text"]');
+// const checkbox = document.querySelector('input[type="checkbox"]');
+// const span = document.querySelector('span');
 
-// Функція для оновлення тексту в span
-function updateSpanName(value) {
-    span.textContent = value.trim() ? value : 'Anonymous';
-}
+// // Функція для оновлення тексту в span
+// function updateSpanName(value) {
+//     span.textContent = value.trim() ? value : 'Anonymous';
+// }
 
-// Подія input для оновлення span
-input.addEventListener('input', (e) => {
-    updateSpanName(e.target.value);
-});
+// // Подія input для оновлення span
+// input.addEventListener('input', (e) => {
+//     updateSpanName(e.target.value);
+// });
 
 // Подія submit для форми
-form.addEventListener('submit', (e) => {
-    // Відміна поведінки за замовчуванням
-    e.preventDefault();
+// form.addEventListener('submit', (e) => {
+//     // Відміна поведінки за замовчуванням
+//     e.preventDefault();
     
-    // Отримуємо значення з інпуту
-    const userName = input.value.trim();
+//     // Отримуємо значення з інпуту
+//     const userName = input.value.trim();
     
-    // Перевірка умов
-    if (!userName) {
-        alert('Будь ласка, введіть ім\'я');
-        return;
-    }
+//     // Перевірка умов
+//     if (!userName) {
+//         alert('Будь ласка, введіть ім\'я');
+//         return;
+//     }
     
-    if (!checkbox.checked) {
-        alert('Будь ласка, підтвердіть чекбокс');
-        return;
-    }
+//     if (!checkbox.checked) {
+//         alert('Будь ласка, підтвердіть чекбокс');
+//         return;
+//     }
     
-    // Створюємо об'єкт з даними
-    const userData = {
-        userName: userName
-    };
+//     // Створюємо об'єкт з даними
+//     const userData = {
+//         userName: userName
+//     };
     
-    // Виводимо в консоль
-    console.log(userData);
+//     // Виводимо в консоль
+//     console.log(userData);
     
-    // Очищаємо форму
-    input.value = '';
-    checkbox.checked = false;
-    updateSpanName('');
-});
+//     // Очищаємо форму
+//     input.value = '';
+//     checkbox.checked = false;
+//     updateSpanName('');
+// });
 
 // Завдання 4:
 
  // Використовуй шаблон розмітки з файлу html та напиши наступний функціонал:
  // При кліку на кнопку "Зменшити" квадрат стає меньшим на 20 пікселів,
 // При кліку на кнопку "Збільшити" - квадрат стає більшим на 20 пікселів.
- 
+
+// document.querySelector('decrease').addEventListener('click', () => {
+//     const square = document.getElementById('square');
+//     let currentSize = parseInt(getComputedStyle(square).width);
+//     square.style.width = (currentSize - 20) + 'px';
+//     square.style.height = (currentSize - 20) + 'px';
+// });
+
+// document.querySelector('increase').addEventListener('click', () => {
+//     const square = document.getElementById('square');
+//     let currentSize = parseInt(getComputedStyle(square).width);
+//     square.style.width = (currentSize + 20) + 'px';
+//     square.style.height = (currentSize + 20) + 'px';
+// });
+
 
 // Завдання 5
 // При натисканні на кожну з кнопок підсумовуються значення з data-атрибутів.
