@@ -1374,3 +1374,53 @@
 // console.log(views); // 4827
 // // console.log(likes); // 1308
 
+
+// const arr = [
+//   "Dido",
+//   23,
+//   false,
+// ]
+// console.log(arr);
+
+//   arr[0] = "Rat"
+//   arr[1] = 100
+//   arr[2] = true
+
+//     console.log(arr);
+    
+// class Student {
+//   constructor(name, age) {
+//     this.name = name
+//     this.age = age
+//   }
+// }
+
+// const firstStudent = new Student('Вася', 25)
+// const secondStudent = new Student('Петя', 18)
+
+// console.log('firstStudent', firstStudent);
+// console.log('secondStudent', secondStudent);
+
+
+// ПРОМИСЫ!!!
+
+// const promise = new Promise((fulfill, reject) => {
+//   console.log("Начало, состояние pending...");
+
+//   setTimeout(() => {
+//     if (Math.random() > 0.5) {
+//       fulfill("Ура, состояние 111 fulfill")
+//     } else {
+//       reject("Ура, состояние 222 reject")
+//     }
+//   }, 3000)
+  
+// })
+
+// promise
+//   .then((successData) => {
+//     console.log("Успех", successData);
+//   })
+//   .catch((errorData) => {
+//     console.log('Ошибка', errorData);
+//   })
