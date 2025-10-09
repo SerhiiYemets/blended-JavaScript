@@ -1402,6 +1402,7 @@
 // console.log('secondStudent', secondStudent);
 
 
+
 // ПРОМИСЫ!!!
 
 // const promise = new Promise((fulfill, reject) => {
@@ -1424,3 +1425,42 @@
 //   .catch((errorData) => {
 //     console.log('Ошибка', errorData);
 //   })
+//   .finally(() => {
+//     console.log("код выполнился один раз");
+//   })
+
+// // АСИНХРОННИСТЬ
+
+// const intervalArr = [];
+
+// function foo1() {
+//   const timerId = setInterval(() => {
+//     console.log("lalala");
+//   }, 1000);
+//   intervalArr.push(timerId);
+// }
+
+// function foo2() {
+//   const timerId = setInterval(() => {
+//     console.log("tototo");
+//   }, 1500);
+//   intervalArr.push(timerId);
+// }
+
+// function foo3() {
+//   const timerId = setInterval(() => {
+//     console.log("hello");
+//   }, 1200);
+//   intervalArr.push(timerId);
+// }
+
+// foo1();
+// foo2();
+// foo3();
+
+// setTimeout(() => {
+//   intervalArr.forEach((id) => {
+//     clearInterval(id);
+//   })
+// }, 3000)
+
