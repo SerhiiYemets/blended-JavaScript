@@ -1464,3 +1464,29 @@
 //   })
 // }, 3000)
 
+
+
+// ПРОМИСЫ!!!!
+
+// const prom = new Promise((resolve, reject) => {
+//   const random = Math.random();
+
+//   setTimeout(() => {
+//     if (random > 0.5) {
+//       resolve("ok!!!");
+//     } else {
+//       reject("OOOPSS");
+//     }
+//   }, 1000)
+// });
+
+// prom
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   })
+//   .finally(() => {
+//     console.log("finally");
+//   })
