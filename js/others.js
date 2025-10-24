@@ -228,7 +228,7 @@
 //       friends: ["Goldie Gentry", "Briana Decker"]
 //     }
 //   ];
-  
+
 //   console.log(getUsersWithFriend(allUsers, "Briana Decker")); 
 //   [
 //     {
@@ -240,21 +240,21 @@
 //       friends: ["Goldie Gentry", "Briana Decker"]
 //     }
 //   ]
-  
+
 //   console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
-  // [
-  //   {
-  //     name: "Elma Head",
-  //     friends: ["Goldie Gentry", "Aisha Tran"]
-  //   },
-  //   {
-  //     name: "Sheree Anthony",
-  //     friends: ["Goldie Gentry", "Briana Decker"]
-  //   }
-  // ]
-  
+// [
+//   {
+//     name: "Elma Head",
+//     friends: ["Goldie Gentry", "Aisha Tran"]
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     friends: ["Goldie Gentry", "Briana Decker"]
+//   }
+// ]
+
 //   console.log(getUsersWithFriend(allUsers, "Adrian Cross" )); // []
-  
+
 // const sortByDescendingFriendCount = users => {
 //     return users.toSorted((a, b) => b.friends.length - a.friends.length);
 // }
@@ -299,43 +299,43 @@
 //       }
 //     ])
 //   );
-  // [
-  //   {
-  //     name: "Ross Vazquez",
-  //     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-  //     gender: "male"
-  //   },
-  //   {
-  //     name: "Sharlene Bush",
-  //     friends: ["Briana Decker", "Sharron Pace"],
-  //     gender: "female"
-  //   },
-  //   {
-  //     name: "Elma Head",
-  //     friends: ["Goldie Gentry", "Aisha Tran"],
-  //     gender: "female"
-  //   },
-  //   {
-  //     name: "Carey Barr",
-  //     friends: ["Jordan Sampson", "Eddie Strong"],
-  //     gender: "male"
-  //   },
-  //   {
-  //     name: "Blackburn Dotson",
-  //     friends: ["Jacklyn Lucas", "Linda Chapman"],
-  //     gender: "male"
-  //   },
-  //   {
-  //     name: "Sheree Anthony",
-  //     friends: ["Goldie Gentry", "Briana Decker"],
-  //     gender: "female"
-  //   },
-  //   {
-  //     name: "Moore Hensley",
-  //     friends: ["Sharron Pace"],
-  //     gender: "male"
-  //   }
-  // ]
+// [
+//   {
+//     name: "Ross Vazquez",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     gender: "female"
+//   },
+//   {
+//     name: "Elma Head",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     gender: "female"
+//   },
+//   {
+//     name: "Moore Hensley",
+//     friends: ["Sharron Pace"],
+//     gender: "male"
+//   }
+// ]
 
 
 // const getTotalBalanceByGender = (users, gender) => {
@@ -571,11 +571,11 @@
 
 
 
-  /*
-   * Метод, що відповідає за додавання суми до балансу.
-   * Приймає суму транзакції.
-   * Викликає createTransaction для створення об'єкта транзакції
-   * після чого додає його до історії транзакцій
+/*
+ * Метод, що відповідає за додавання суми до балансу.
+ * Приймає суму транзакції.
+ * Викликає createTransaction для створення об'єкта транзакції
+ * після чого додає його до історії транзакцій
 //    */
 //   deposit(amount) {
 //     this.balance += amount;
@@ -719,7 +719,7 @@
 
 // console.log(addArrow(10, 20));
 
-  
+
 // const fnB = a => ({ a : 20});
 // console.log(fnB(10));
 
@@ -1090,14 +1090,14 @@
 //   constructor(arg) {
 //     this.#items = arg;
 //   }
-  
+
 //   getItems() {
 //     return this.#items;
 //   }
 //   addItem(newItem) {
 //     this.#items.push(newItem);
 //   }
-  
+
 //   removeItem(itemToRemove) {
 //     const polo = this.#items.indexOf(itemToRemove);
 //     if (polo !== -1) {
@@ -1210,7 +1210,7 @@
 //   }
 //   attack() {
 //     console.log(`${this.name} attacks with ${this.weapon}`);
-    
+
 //   }
 // }
 
@@ -1387,7 +1387,7 @@
 //   arr[2] = true
 
 //     console.log(arr);
-    
+
 // class Student {
 //   constructor(name, age) {
 //     this.name = name
@@ -1415,7 +1415,7 @@
 //       reject("Ура, состояние 222 reject")
 //     }
 //   }, 3000)
-  
+
 // })
 
 // promise
@@ -1490,3 +1490,113 @@
 //   .finally(() => {
 //     console.log("finally");
 //   })
+
+
+
+/**(10 модуль 2 занятие)
+ * Напиши програмне забезпечення для ігрового автомата.
+ * Для вирішення завдання використай готову розмітку HTML та базову стилізацію.
+ *
+ * Після натиснення на кнопку "Start game"
+ * в кожному віконці по черзі має з'являтись
+ * смайлик з затримкою в 1 секунду ('🤑' або '👿')
+ *
+ * Під час обробки кожного віконця створи масив з Promis-ами
+ * в якому кожен з них буде відповідати за своє віконце,
+ * після чого оброби даний масив за допомогою методу Promise.allSettled
+ *
+ * Після того як всі віконця були заповнені потрібно
+ * щоб скріпт автоматично визначав чи гравець переміг, чи ні.
+ * Якщо в кожному віконці однаковий смайлик це означає що користувач переміг
+ *
+ * В поле result виводить повідомлення про статус гри ('Winner' або 'Loser')
+ *
+ * Після повторного натискання на кнопку "Start game"
+ * поле має очищатись, а гра починатись з початку.
+ */
+
+// <body>
+//     <p><a href="index.html">Go back</a></p>
+
+//     <button class="start-btn">Start game</button>
+//     <div class="container">
+//       <div class="item"></div>
+//       <div class="item"></div>
+//       <div class="item"></div>
+//     </div>
+//     <p class="result"></p>
+
+//     <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+//     <script src="js/03-game.js"></script>
+//   </body>
+
+// const startBtn = document.querySelector(".start-btn");
+// const container = document.querySelector(".container");
+// const result = document.querySelector(".result");
+
+
+// startBtn.addEventListener("click", handleClick);
+
+// function handleClick() {
+//     result.innerHTML = "";
+//     startBtn.disabled = true;
+
+//     const promises = [...container.children].map(() => {
+//         return new Promise((resolve, reject) => {
+//             const random = Math.random();
+
+//             if(random > 0.5) {
+//                 resolve("🤑");
+//             } else {
+//                 reject("👿");
+//             }
+//         })
+//     })
+
+//     Promise.allSettled(promises)
+//         .then(items => {
+//             const isWinner = 
+//                 items.every((item) => item.status === "fulfilled") ||
+//                 items.every((item) => item.status === "rejected");
+
+//             items.forEach((item, i) => {
+//                 container.children[i].innerHTML = "";
+
+//                 setTimeout(() => {
+//                     container.children[i].innerHTML = item.value || item.reason;
+
+//                     if(i === items.length - 1) {
+//                         result.innerHTML = isWinner ? "Winner" : "Loser";
+//                         startBtn.disabled = false;
+//                     }
+//                 }, 1000 * (i + 1));
+//             })
+//         })
+// }
+
+
+
+// 1) Створити розмітку яка при завантажені робит запит 
+// на бекенд та отрімую всі доступні породи 
+
+// 2) в інтерфейсе есть форма пошуку з привязаними DataList з завантаженням
+
+
+// frechBreeds();
+
+// function frechBreeds() {
+//   axios("http//")
+//     .then(result => {
+//       // console.log(result.data);
+//       breedsList.insertAdjacentHTML('beforeend', populateDataList)
+//     })
+//     .catch(error => {
+//       console.log(error.message);
+//     })
+// }
+
+// function populateDataList(arr) {
+//   return arr.map(({ id, name }) =>
+//     `<option value="${name}" data-id="${id}"  ></option>
+//     `).join('');
+// }
